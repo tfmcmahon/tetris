@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 
 const StartButton = ({ callback }) => (
-  <div>
-    Start Game
-  </div>
+  <Fragment>
+    <button
+      className='startButton'
+      onClick={callback}
+    >
+      Start Game
+    </button>
+  </Fragment>
 )
 
 export default StartButton
